@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> age calculator</title>
+<style>
+#test{
+  background: #222222;
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+	<div id="test">
+Age in [Year] is :[0]
+</div>
+<script>
+function age(yearborn,year){
+ var result = year-yearborn;
+ var ret = '';
+
+ if ( result >=50){
+ 	ret = 'you are old';
+ } 
+ else {
+ 	ret = 'young!';
+ }
+ return ' Age in'+ year+' is:' + result;
+}
+document.querySelector('#test').innerHTML =
+age (1996,2030);
+
+</script>
+
+</body>
